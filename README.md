@@ -5,11 +5,11 @@ The system provides a Streamlit dashboard for visualization, a FastAPI backend f
 
 ## 🚀 Tech Stack
 
-Backend: FastAPI + LangChain + OpenAI API + RAG (FAISS/Pinecone for vector search)
+Backend: FastAPI + LangChain + OpenAI API + RAG (FAISS)
 
 Frontend: Streamlit Dashboard (interactive visualization)
 
-Database: PostgreSQL (structured data) + FAISS/Pinecone (vector embeddings for RAG)
+Database: PostgreSQL (structured data) + FAISS
 
 Deployment: Docker(local)
 
@@ -29,9 +29,8 @@ bash run.sh
   docker build -t llm-finance 
 
 3.Run the container (replace YOUR_API_KEY with your OpenAI key):
- docker run -p 8000:8000 -p 8501:8501 \
-   -e OPENAI_API_KEY=YOUR_API_KEY \
-   llm-finance
+ 
+ docker run -p 8000:8000 -p 8501:8501 \ -e OPENAI_API_KEY=YOUR_API_KEY \llm-finance
 
 ## 🌐 Access
 
