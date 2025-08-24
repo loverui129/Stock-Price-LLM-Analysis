@@ -24,8 +24,10 @@ bash run.sh
 1.Clone this repo:
   git clone https://github.com/loverui129/Stock-Price-LLM-Analysis.git
   cd Stock-Price-LLM-Analysis
+
 2.Build the Docker image:
   docker build -t llm-finance 
+
 3.Run the container (replace YOUR_API_KEY with your OpenAI key):
  docker run -p 8000:8000 -p 8501:8501 \
    -e OPENAI_API_KEY=YOUR_API_KEY \
